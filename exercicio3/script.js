@@ -9,8 +9,8 @@ const produtos = [
     { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
- ]
- 
+]
+
 const produtosDeLimpeza = produtos.filter((produto) => {
     return produto.categoria === 'Limpeza';
 })
