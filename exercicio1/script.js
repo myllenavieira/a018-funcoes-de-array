@@ -12,14 +12,10 @@ const tudoMaiuscula = (objeto) => {
         senha: objeto.senha.toUpperCase()
     }
 }
-
+//afraseestatodajunta
 const textoCorrido = (objeto) => {
-    return {
-        nome: objeto.nome.split(" ").join(""),
-        profissao: objeto.profissao.split(" ").join(""),
-        username: objeto.username.split(" ").join(""),
-        senha: objeto.senha.split(" ").join("")
-    }
+    let textoFull= `${objeto.nome}, ${objeto.profissao}, ${objeto.username}, ${objeto.senha}`
+    return textoFull;
 }
 
 const realizaFuncoes = (objeto, callback) => {
